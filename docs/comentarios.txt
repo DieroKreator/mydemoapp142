@@ -1,0 +1,36 @@
+Teste Mobile
+--> testes de aplicativos para celulares e tablets
+--> também de app para relogio, central de midia, smartv
+
+Vamos usar o framework Appium
+- Trabalha tanto Android como IOS
+- É uma vertente do Selenium WebDriver voltada para teste de app
+- Multiplos Sistemas Operacionais
+- Multiplas Linguagens de programação: C#, Java, JavaScript, Python
+
+Tipos de Aplicativos
+- WebApp (Site disfarçado de aplicativo)
+- Nativo - um projeto separado para Android e outro para IOS
+- Hibrido - um projeto gera apps para Android e IOS
+
+Requisitos de Hardware
+- Processador Intel i5 ou i7 (poderia i9)
+- Familia do processados 12-->2022, 13-->2023, 14-->2024
+- Memória RAM: 8 Gb --> 16 Gb (quanto mais melhor: 32 Gb)
+- Placa de Vídeo offboard
+- Disco Rigido: SSD (pelo menos o boot)
+
+Ambiente de Teste em Nuvem = Device Farms
+- SauceLabs --> Vamos criar uma conta
+- BrowserStack
+- Perfecto
+
+Roteiro de Inspeção
+- Instalar o app alvo e o Apk Info
+- Usar o Apk Info para descobrir:
+appPackage: com.saucelabs.mydemoapp.android
+appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+ou com.saucelabs.mydemoapp.android.view.activities.MainActivity
+- Baixar e instalar o Appium Inspector
+- Configurar o Appium Inspector para acessar o app no SauceLabs com as informaçõe do Apk Info
+- Usar o Appium Inspector para mapear os elementos e exportar o script de teste
