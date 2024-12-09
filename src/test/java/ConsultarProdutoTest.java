@@ -15,11 +15,11 @@ public class ConsultarProdutoTest {
 
   private URL getUrl() {
     try {
-      return new URL("https://InstrutorIterasys27:e41c8d26-0be8-4359-8ec1-39817f95b694@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+      return new URL("https://oauth-difarmo-6859d:43bdf5b4-9473-4911-aea3-e46fcdddaa26@ondemand.us-west-1.saucelabs.com:443/wd/hub");
     } catch (MalformedURLException e) {
       e.printStackTrace();
     }
-        return null; // Intervalo: Voltaremos 21:00
+        return null;
   }
  
   @BeforeEach
