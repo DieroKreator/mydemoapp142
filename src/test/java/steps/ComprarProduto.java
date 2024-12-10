@@ -22,7 +22,7 @@ public class ComprarProduto {
     private URL getUrl() {
         try {
             return new URL(
-                    "https://InstrutorIterasys28:92de138a-aec9-4c16-a760-fabc03bb7346@ondemand.us-west-1.saucelabs.com:443/wd/hub");
+                    "https://oauth-difarmo-6859d:43bdf5b4-9473-4911-aea3-e46fcdddaa26@ondemand.us-west-1.saucelabs.com:443/wd/hub");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -123,7 +123,8 @@ public class ComprarProduto {
     }
 
     @Entao("na tela do carrinho verifico o {string} {string} e {int}")
-    public void na_tela_do_carrinho_verifico_o_e(String produto, String preco, Integer quantidade) throws InterruptedException {
+    public void na_tela_do_carrinho_verifico_o_e(String produto, String preco, Integer quantidade)
+            throws InterruptedException {
         // Carrinho
         // produto :
         // preco :
@@ -150,5 +151,5 @@ public class ComprarProduto {
                 "com.saucelabs.mydemoapp.android:id/totalPriceTV")).getText());
 
     }
-    
+
 }
